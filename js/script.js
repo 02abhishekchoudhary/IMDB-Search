@@ -49,7 +49,7 @@ async function handleMoiveTitle(result) {
             <p class="card-text"><b>Year :</b> ${data.Year}</p>
             <p class="card-text"><b>IMDB Rating :</b> ${data.imdbRating}</p>
             <button id="fav_btn" class="btn btn-outline-danger" type="submit" >
-            My Favourite Movie
+            Add To Favourite List
             </button>
             </div>
             `;
