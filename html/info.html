@@ -1,0 +1,78 @@
+<!-- html start -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head start -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Title of page -->
+    <title>Info</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+</head>
+<!-- head end -->
+
+<!-- body start -->
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <!-- container start -->
+        <div class="container-fluid">
+            <!-- link of home page -->
+            <a 
+                class="navbar-brand" 
+                href="../index.html"
+                style="background-color: #F5C518; color:black; border-radius: 5px; padding: 5px;">
+                IMDB
+            </a>
+
+            <!-- disable form input -->
+            <form class="d-flex">
+                <input 
+                    type="text" 
+                    id="searchBar" 
+                    class="form-control me-2" 
+                    placeholder="Enter Movie Name here..."
+                    aria-label="Enter Movie Name here..." 
+                    aria-describedby="basic-addon1" 
+                    name="searchInputTitle"
+                    disabled 
+                />
+            </form>
+
+            <!-- link for disabled favourite movies -->
+            <a 
+                class="btn btn-success" 
+                href="./movies.html">
+                Favourite Movies
+            </a>
+
+        </div>
+        <!-- container end -->
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- main section -->
+    <main>
+        <div id="movieInfoContainer"></div>
+    </main>
+
+    <!-- linking info script js file -->
+    <script src="../js/info.js"></script>
+
+</body>
+<!-- body end -->
+
+</html>
+<!-- html end -->

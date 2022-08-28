@@ -1,0 +1,83 @@
+<!-- html tag start -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head teg start -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking css stylesheet to html page -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title of the page -->
+    <title>IMDB Clone</title>
+
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!-- end of head -->
+
+<!-- start of body -->
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-grey">
+        <!-- container start -->
+        <div class="container-fluid">
+            <!-- link of home page -->
+            <a 
+                class="navbar-brand" 
+                href="#"
+                style="background-color: #F5C518; color:black; border-radius: 5px; padding: 5px;">
+                IMDB
+            </a>
+
+            <!-- from to get search input -->
+            <form class="d-flex">
+                <input 
+                    id="searchBar" 
+                    type="text" 
+                    class="form-control me-2" 
+                    placeholder="Enter Movie Name here..."
+                    aria-label="Enter Movie Name here..." 
+                    aria-describedby="basic-addon1" 
+                    name="searchInputTitle" 
+                />
+            </form>
+
+            <!-- link of fav movies page -->
+            <a
+                class="btn btn-success" 
+                href="./html/movies.html">
+                Favourite Movies
+            </a>
+        </div>
+        <!-- conntainer end -->
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- displaying drop down search container -->
+    <div
+        class="card text-dark bg-light mb-3"
+        style="max-width: 50rem; margin-left: 24.2rem; flex-direction: row"
+        id="search">
+    </div>
+
+    <!-- linking javascript file -->
+    <script src="./js/script.js"></script>
+
+</body>
+<!-- End of body -->
+
+</html>
+<!-- html tag end -->
